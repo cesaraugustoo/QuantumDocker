@@ -25,7 +25,7 @@ RUN dnf -y install libX11-xcb compat-openssl10-devel
 USER $NB_USER
 RUN cd Quantum && git checkout linux  && code . && cd Samples/Teleportation && dotnet build
 
-RUN conda install 'python==3.6.4' && conda clean -tipsy
+RUN conda install 'python==3.8.2' && conda clean -tipsy
 
 USER root
 RUN dnf -y install glib2-devel
