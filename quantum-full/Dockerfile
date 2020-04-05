@@ -1,5 +1,5 @@
 ARG DOCKER_TAG=latest
-FROM docker.io/fermilabqc/quantum-lite:${DOCKER_TAG}
+FROM docker.io/cesaraugustoo/quantum-lite:${DOCKER_TAG}
 
 USER root
 RUN dnf -y install gcc gcc-c++
