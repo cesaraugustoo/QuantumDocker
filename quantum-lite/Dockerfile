@@ -1,5 +1,5 @@
 	ARG DOCKER_TAG=latest
-FROM docker.io/fermilabqc/base-notebook:${DOCKER_TAG}
+FROM docker.io/cesaraugustoo/base-notebook:${DOCKER_TAG}
 
 USER root
 ENV GITDIR=/srv/git
