@@ -8,7 +8,7 @@ USER root
 
 # Install all OS dependencies for notebook server that starts but lacks all
 # features (e.g., download as all possible file formats)
-RUN dnf -y install wget bzip2 ca-certificates sudo tar findutils glibc-lanpack-en
+RUN dnf -y install wget bzip2 ca-certificates sudo tar findutils glibc-langpack-en
 
 # Configure environment
 ENV CONDA_DIR=/opt/conda \
