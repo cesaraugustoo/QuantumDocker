@@ -1,4 +1,4 @@
-.PHONY: base-notebook quantum-lite quantum-full quantum-full-and-qsharp
+.PHONY: base-notebook quantum-lite quantum-full quantum-network quantum-full-and-qsharp
 
 # tag Docker builds with branch name (and map master->latest)
 branch:=$(subst master,latest,$(shell git rev-parse --abbrev-ref HEAD))
