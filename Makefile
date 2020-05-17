@@ -13,6 +13,9 @@ quantum-lite: base-notebook/Dockerfile quantum-lite/Dockerfile
 
 quantum-full: base-notebook/Dockerfile quantum-lite/Dockerfile quantum-full/Dockerfile
 	docker build -t docker.io/cesaraugustoo/quantum-full quantum-full
+	
+quantum-network: base-notebook/Dockerfile quantum-lite/Dockerfile quantum-full/Dockerfile
+    docker build -t docker.io/cesaraugustoo/quantum-network quantum-network
 
 quantum-full-and-qsharp: base-notebook/Dockerfile quantum-lite/Dockerfile quantum-full/Dockerfile quantum-full-and-qsharp/Dockerfile
 	docker build -t docker.io/cesaraugustoo/quantum-full-and-qsharp quantum-full-and-qsharp
